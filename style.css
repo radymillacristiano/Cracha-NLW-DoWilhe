@@ -18,8 +18,8 @@ body {
 
 main {
   background: url(images/background.svg) no-repeat center/cover;
-  width: 100vw;
-  min-height: 1700px;
+  width: 100%;
+  min-height: 1200px;
   height: 100vh;
 }
 
@@ -29,18 +29,25 @@ main {
   margin-right: auto;
   text-align: center;
   color: var(--gray);
+  padding: 0px 10px 10px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 0 8px rgba(300, 100, 50, 0.4);
+
 }
 
 .avatar {
   width: 10rem;
   margin: 11.5rem auto 0;
   position: relative;
+  padding-top: 30px;
 }
 
 .avatar span {
   position: absolute;
   top: -15px;
   z-index: 1;
+  padding-top: 20px;
 }
 
 .avatar > img {
@@ -70,10 +77,20 @@ p {
 }
 
 ul {
-  margin-top: 4rem;
+  margin-top: 2rem;
   list-style: none;
   padding: 0;
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+  padding-bottom: 10px;
+}
+
+ul li a img {
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+ul li a img:hover {
+  transform: scale(1.1);
 }
